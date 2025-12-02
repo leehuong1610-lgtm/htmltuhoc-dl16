@@ -1,0 +1,1238 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --white: rgba(255, 255, 255, 1);
+            --grey: rgba(159, 159, 159, 1);
+            --button-color: linear-gradient(180deg, #1CB981 0%, #076141 50%, #1CB981 100%);
+            --bg-section: linear-gradient(180deg, rgba(23, 164, 114, 0.2) 0%, rgba(8, 102, 69, 0.2) 100%);
+            --bg-item: rgba(255, 255, 255, 0.05);
+            --bg: rgba(16, 20, 23, 1);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            width: 100%;
+            min-height: 100vh;
+            background-color: var(--bg);
+            background-image: url(image/BG.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .header {
+            width: 90%;
+            max-width: 1440px;
+            height: 153px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .top-nav {
+            width: 100%;
+            max-width: 1200px;
+            height: 53px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .top-nav .nav-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            width: 154px;
+            font-family: "Mountains of Christmas";
+            font-size: 38px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        .header .nav-menu {
+            width: 658px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .header .nav-menu .nav-link {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            color: var(--white);
+        }
+        .header .nav-menu .btn-reg {
+            width: 178px;
+            height: 100%;
+            border-radius: 43px;
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            background: var(--button-color);
+        }
+        .header .hamburger {
+            width: 30px;
+            height: 19px;
+            background-image: url(image/Menu.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+        }
+
+        .hero {
+            width: 90%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+        }
+        .hero .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .hero .container .title {
+            font-family: "Michroma";
+            max-width: 1200px;
+            font-weight: 400;
+            font-size: 58px;
+            text-align: center;
+            color: var(--white);
+        }
+        .hero .container .text {
+            font-family: "Montserrat";
+            max-width: 1200px;
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            color: var(--grey);
+        }
+        .hero .container .button {
+            width: 441px;
+            height: 85px;
+            border-radius: 43px;
+            background: var(--button-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 36px;
+            color: var(--white);
+        }
+
+        .why-us {
+            width: 100%;
+            background: var(--bg-section);
+            display: flex;
+            justify-content: center;
+        }
+        .why-us .container {
+            width: 90%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+        }
+        .why-us .container .content-wrap {
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .why-us .container .content-wrap .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            color: var(--white);
+        }
+        .why-us .container .content-wrap .feature-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 50px;
+            column-gap: 30px;
+        }
+        .why-us .container .content-wrap .feature-list .feature-box {
+            width: calc((100% - 30px * 2) / 3);
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .why-us .container .content-wrap .feature-list .feature-box:nth-child(1),
+        .why-us .container .content-wrap .feature-list .feature-box:nth-child(3) {
+            margin-top: 13.5px;
+            justify-content: start;
+        }
+        .icon1 {
+            width: 100px;
+            height: 100px;
+        }
+        .icon2{
+            width: 67px;
+            height: 100px;
+        }
+        .icon3 {
+            width: 140px;
+            height: 100px;
+        }
+        .icon4 {
+            width: 92px;
+            height: 100px;
+        }
+        .why-us .container .content-wrap .feature-list .title {
+            font-family: "Michroma";
+            font-weight: 400;;
+            font-size: 28px;;
+            text-align: center;
+            color: var(--white);
+        }
+        .why-us .container .content-wrap .feature-list .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 22px;
+            text-align: center;
+            color: var(--grey);
+        }
+
+        .featured-courses {
+            width: 90%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+        }
+        .featured-courses .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        .featured-courses .container .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 48px;
+            color: var(--white);
+        }
+        .featured-courses .container .course-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .featured-courses .container .course-cards .course-card {
+            width: calc((100% - 30px * 2) / 3);
+            max-width: 380px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 1);
+            background-color: var(--bg-item);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            gap: 109px;
+        }
+        .featured-courses .container .course-cards .course-card:nth-child(4),
+        .featured-courses .container .course-cards .course-card:nth-child(5) {
+            display: none;
+        }
+
+        .featured-courses .container .course-cards .box-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+        .fc-icon1 {
+            width: 90px;
+            height: 87px;
+        }
+        .fc-icon2 {
+            width: 90px;
+            height: 90px;
+        }
+        .featured-courses .container .course-cards .box-content .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 22px;
+            color: var(--white);
+        }
+        .featured-courses .container .course-cards .box-content .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--grey);
+        }
+        .featured-courses .container .course-cards .button {
+            width: 180px;
+            height: 46px;
+            border-radius: 43px;
+            background: var(--button-color);
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .how-it-works {
+            width: 100%;
+            background: var(--bg-section);
+            display: flex;
+            justify-content: center;
+        }
+        .how-it-works .container {
+            width: 90%;
+            max-width: 1440px;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .how-it-works .container .content-wrap {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        .how-it-works .container .content-wrap .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            color: var(--white);
+        }
+        .how-it-works .container .content-wrap .box-wrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 17px;
+        }
+        .how-it-works .container .content-wrap .box-wrapper .step-item {
+            width: calc((100% - 17px * 2) / 3);
+            max-width: 383px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .step {
+            width: 100px;
+            height: 100px;
+        }
+        .step2 {
+            width: 123px;
+            height: 100px;
+        }
+        .how-it-works .container .content-wrap .box-wrapper .step-item .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .reviews {
+            width: 90%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+        }
+        .reviews .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        .reviews .container .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 48px;
+            color: var(--white);
+        }
+        .reviews .container .review-list {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .reviews .container .review-list .review-card {
+            width: calc((100% - 30px * 2) / 3);
+            max-width: 380px;
+            padding: 61px 0;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 1);
+            background-color: rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .reviews .container .review-list .review-card:nth-child(1) {
+            display: none;
+        }
+
+        .reviews .container .review-list .review-profile {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .reviews .container .review-list .review-text {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .avt {
+            width: 90px;
+            height: 93px;
+        }
+        .reviews .container .review-list .review-profile .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 22px;
+            color: var(--white);
+        }
+        .reviews .container .review-list .review-profile .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--white);
+        }
+        .reviews .container .review-list .review-text .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            color: var(--grey);
+        }
+        .comma {
+            width: 30px;
+            height: 22px;
+        }
+
+        .cta-section {
+            width: 100%;
+            background: var(--bg-section);
+            display: flex;
+            justify-content: center;
+        }
+        .cta-section .container {
+            width: 90%;
+            max-width: 1440px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cta-section .container .content-wrap {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .cta-section .container .content-wrap .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-section .container .content-wrap .content .title {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            color: var(--white);
+        }
+        .cta-section .container .content-wrap .content .text {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            color: var(--grey);
+        }
+        .cta-section .container .button {
+            width: 836px;
+            height: 85px;
+            border-radius: 43px;
+            background: var(--button-color);
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 36px;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-button {
+            padding: 0 10px;
+        }
+
+        .footer {
+            width: 90%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+        }
+        .footer .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 50px;
+        }
+        .footer .container .title {
+            font-family: "Mountains of Christmas";
+            font-weight: 400;
+            font-size: 48px;;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        .footer .container .footer-group {
+            width: 100%;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        .footer .container .footer-group .footer-link {
+            font-family: "Michroma";
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+
+        @media only screen and (max-width: 1171px) {
+            .background {
+                min-height: 4500px;
+                transition: all 0.3s ease;
+            }
+            .page-wrap {
+                width: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .header {        
+                height: 110px;
+                transition: all 0.3s ease;
+            }
+            .header .logo {
+                width: 146px;
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .header .nav-menu {
+                width: 409px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .header .nav-menu .nav-link:nth-child(2),
+            .header .nav-menu .nav-link:nth-child(4) {
+                display: none;
+            }
+
+            .hero .container {
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .hero .container .title {
+                max-width: 660px;
+                font-size: 48px;
+                transition: all 0.3s ease;
+            }
+            .hero .container .text {
+                max-width: 660px;
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .hero .container .button {
+                width: 340px;
+                height: 70px;
+                font-size: 28px;
+                transition: all 0.3s ease;
+            }
+
+            .why-us .container .content-wrap {
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 30px;
+                column-gap: 50px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list .feature-box {
+                width: calc((100% - 50px) / 2);
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .course-card:nth-child(1), 
+            .featured-courses .container .course-cards .course-card:nth-child(2),
+            .featured-courses .container .course-cards .course-card:nth-child(3) {
+                display: none;
+            }
+
+            .why-us .container .content-wrap .feature-list .feature-box:nth-child(1),
+            .why-us .container .content-wrap .feature-list .feature-box:nth-child(3) {
+                margin-top: 0;
+                justify-content: center;
+            }
+            .icon1 {
+                width: 80px;
+                height: 80px;
+                padding: 1px;
+                transition: all 0.3s ease;
+            }
+            .icon2{
+                width: 53px;
+                height: 80px;
+                padding: 1px;
+                transition: all 0.3s ease;
+            }
+            .icon3 {
+                width: 112px;
+                height: 80px;
+                padding: 1px;
+                transition: all 0.3s ease;
+            }
+            .icon4 {
+                width: 73px;
+                height: 80px;
+                padding: 1px;
+                transition: all 0.3s ease;
+            }
+
+            .featured-courses .container {
+                width: 100%;
+                max-width: 1200px;
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards {
+                display: flex;
+                gap: 25px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .course-card {
+                width: calc((100% - 25px) / 2);
+                max-width: 330px;
+                width: 100%;
+                gap: 85px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .course-card:nth-child(1) { 
+                display: none;
+            }
+            .featured-courses .container .course-cards .course-card:nth-child(4),
+            .featured-courses .container .course-cards .course-card:nth-child(5) { 
+                display: flex;
+            }
+
+            .how-it-works .container {
+                padding: 30px 0;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                column-gap: 17px;
+                row-gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper .step-item {
+                width: calc((100% - 17px) / 2);
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                transition: all 0.3s ease;
+            }
+            .step {
+                width: 80px;
+                height: 80px;
+                transition: all 0.3s ease;
+            }
+            .step2 {
+                width: 98px;
+                height: 80px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper .step-item .text {
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container {
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-card:nth-child(3),
+            .reviews .container .review-list .review-card:nth-child(4) {
+                display: none;
+            }
+            .reviews .container .review-list .review-card:nth-child(1),
+            .reviews .container .review-list .review-card:nth-child(2) {
+                display: flex;
+                width: calc((100% - 30px) / 2);
+                max-width: 320px;
+                padding: 50px 0;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-profile {
+                width: 280px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-text {
+                width: 280px;
+                transition: all 0.3s ease;
+            }
+
+            .cta-section .container {
+                padding: 30px 0;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .content-wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .content-wrap .content .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .button {
+                width: 554px;
+                height: 61px;
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+
+            .footer .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group {
+                width: 100%;
+                max-width: 660px;
+                height: 62px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                column-gap: 30px;
+                row-gap: 10px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(4) {
+                gap: 50px;
+            }
+            .footer .container .footer-group:nth-child(5) {
+                gap: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .background {
+                height: 100%;
+                min-height: 3600px;
+                transition: all 0.3s ease;
+            }
+            .page-wrap {
+                width: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            .header {        
+                height: 73px;
+                transition: all 0.3s ease;
+            }
+            .header .logo {
+                width: 146px;
+                font-size: 24px;
+                transition: all 0.3s ease;
+            }
+            .header .nav-menu {
+                display: none;
+            }
+            .header .hamburger {
+                width: 30px;
+                height: 19px;
+                background-image: url(image/Menu.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: block;
+            }
+
+            .hero .container {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+            .hero .container .title {
+                max-width: 330px;
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .hero .container .text {
+                max-width: 330px;
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+            .hero .container .button {
+                width: 187px;
+                height: 43px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+
+            .why-us .container .content-wrap {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .title {
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list .title {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list .text {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list .feature-box {
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease;
+            }
+            .why-us .container .content-wrap .feature-list .feature-box:nth-child(1),
+            .why-us .container .content-wrap .feature-list .feature-box:nth-child(3) {
+                margin-top: 0;
+                justify-content: center;
+            }
+            .icon1 {
+                width: 60px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+            .icon2{
+                width: 40px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+            .icon3 {
+                width: 84px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+            .icon4 {
+                width: 55px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+
+            .featured-courses .container {
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .title {
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards {
+                display: flex;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .course-card {
+                display: none;
+            }
+            .featured-courses .container .course-cards .course-card:nth-child(5) {
+                display: none;
+                width: 100%;
+                max-width: 330px;
+                gap: 54px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .box-content .title {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .box-content .text {
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+            .featured-courses .container .course-cards .button {
+                width: 148px;
+                height: 43px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+
+            .how-it-works .container {
+                padding: 20px 0;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .title {
+                max-width: 320px;
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper .step-item {
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                transition: all 0.3s ease;
+            }
+            .step {
+                width: 60px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+            .step2 {
+                width: 74px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+            .how-it-works .container .content-wrap .box-wrapper .step-item .text {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .title {
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .avt {
+                width: 70px;
+                height: 70px;
+            }
+            .reviews .container .review-list {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-card:nth-child(2),
+            .reviews .container .review-list .review-card:nth-child(3),
+            .reviews .container .review-list .review-card:nth-child(4) {
+                display: none;
+            }
+            .reviews .container .review-list .review-card:nth-child(1) {
+                display: flex;
+                width: 100%;
+                max-width: 320px;
+                padding: 30px 0;
+                gap: 20px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-profile {
+                width: 280px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-text {
+                width: 280px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-profile .title {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-profile .text {
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+            .reviews .container .review-list .review-text .text {
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+
+            .cta-section .container {
+                padding: 20px 0;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .content-wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .content-wrap .content .title {
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .content-wrap .content .text {
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            .cta-section .container .button {
+                width: 179px;
+                height: 43px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+            .text-button {
+                display: none;
+            }
+
+            .footer .container {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(3) {
+                width: 100%;
+                max-width: 330px;
+                height: 140px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(4) {
+                width: 370px;
+                height: 44px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(5) {
+                width: 100%;
+                max-width: 330px;
+                height: 17px;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .title {
+                font-size: 36px;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group .footer-link {
+                width: 100%;
+                font-size: 14px;
+                text-transform: capitalize;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(4) .footer-link {
+                width: 100%;
+                font-size: 12px;
+                text-transform: none;
+                transition: all 0.3s ease;
+            }
+            .footer .container .footer-group:nth-child(5) .footer-link {
+                width: 100%;
+                font-size: 12px;
+                text-transform: none;
+                transition: all 0.3s ease;
+            }
+        }
+    
