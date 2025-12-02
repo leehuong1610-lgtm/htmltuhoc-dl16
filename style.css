@@ -1189,6 +1189,8 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
+                position: relative;
+                top: 50px;
                 transition: all 0.3s ease;
             }
             .footer .container .footer-group:nth-child(4) {
@@ -1199,6 +1201,8 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
+                position: relative;
+                top: 35px;
                 transition: all 0.3s ease;
             }
             .footer .container .footer-group:nth-child(5) {
